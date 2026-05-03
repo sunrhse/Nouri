@@ -1,0 +1,190 @@
+.wrapper { max-width: 900px; margin: 0 auto; }
+
+.back {
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: color 0.15s;
+}
+.back:hover { color: var(--green-700); }
+
+.card {
+  background: #fff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--sand-200);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.hero {
+  height: 160px;
+  background: linear-gradient(135deg, var(--green-50) 0%, var(--green-100) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emoji { font-size: 72px; }
+
+.saveBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 7px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--green-200);
+  background: #fff;
+  color: var(--green-700);
+  transition: all 0.15s;
+}
+.saveBtn:hover { background: var(--green-100); }
+.saveBtn.saved { background: #fff0f0; border-color: #f5c0c0; color: var(--red); }
+
+.body { padding: 2rem; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
+
+.badge {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  background: var(--sand-100);
+  color: var(--ink-muted);
+  border: 1px solid var(--sand-300);
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  background: var(--green-50);
+  color: var(--green-700);
+  border: 1px solid var(--green-100);
+  font-weight: 500;
+}
+
+.portionsRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.portionLabel { font-size: 14px; color: var(--ink-muted); }
+
+.portionBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--sand-300);
+  background: var(--sand-100);
+  font-size: 16px;
+  color: var(--green-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.portionBtn:hover { background: var(--green-100); }
+
+.portionVal {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 28px;
+  text-align: center;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .twoCol { grid-template-columns: 1fr; }
+}
+
+.block {
+  background: var(--sand-100);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.blockTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+.blockTitle small { font-size: 10px; font-weight: 400; text-transform: none; letter-spacing: 0; }
+
+.ingrRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--sand-200);
+}
+.ingrRow:last-child { border-bottom: none; }
+
+.ingrQty { color: var(--ink-light); }
+
+.nutriRow { margin-bottom: 10px; }
+.nutriHeader { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; }
+.nutriVal { color: var(--ink-light); }
+.barBg { height: 5px; background: var(--sand-200); border-radius: var(--radius-full); overflow: hidden; }
+.barFill { height: 100%; background: var(--green-500); border-radius: var(--radius-full); transition: width 0.4s ease; }
+
+.step {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  align-items: flex-start;
+}
+
+.stepNum {
+  min-width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--green-700);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ctaBtn {
+  width: 100%;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--green-700);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  transition: background 0.15s, transform 0.1s;
+}
+.ctaBtn:hover { background: var(--green-900); }
+.ctaBtn:active { transform: scale(0.99); }

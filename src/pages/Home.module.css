@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--green-700);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.heroSub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.72);
+}
+
+.heroTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.heroTag {
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.16);
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.chip {
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  border: 1px solid var(--sand-300);
+  background: #fff;
+  color: var(--ink-muted);
+  transition: all 0.15s;
+}
+.chip:hover { border-color: var(--green-200); color: var(--green-700); }
+.chip.chipOn {
+  background: var(--green-100);
+  border-color: var(--green-200);
+  color: var(--green-700);
+  font-weight: 500;
+}
+
+.section { margin-bottom: 2.5rem; }
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
